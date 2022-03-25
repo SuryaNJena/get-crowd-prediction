@@ -39,7 +39,7 @@ six==1.16.0
     # via
     #   patsy
     #   python-dateutil
-statsmodels==0.12.2
+statsmodels==0.13.2
     # via -r requirements.in
 werkzeug==2.0.3
     # via flask
