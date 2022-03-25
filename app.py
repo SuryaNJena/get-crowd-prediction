@@ -21,7 +21,7 @@ def predict():
 
     pd.options.mode.chained_assignment = None
 
-    df['datetime'] = pd.to_datetime(df['In Time']+' '+df['Date'], format='%H:%M %d/%m/%Y')
+    df['datetime'] = pd.to_datetime(df['In Time']+' '+df['Date'], format='%H:%M %d-%m-%y')
 
     df['Hour'] = df['datetime'].dt.hour
     df['Date'] = df['datetime'].dt.date
