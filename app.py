@@ -11,7 +11,7 @@ def predict():
     data = request.get_json(force=True)
     location_of_analysis = data['location']
     datetime_for_prediction = pd.to_datetime(data['date'], format='%Y-%m-%d %H:%M').floor('H')
-    df = pd.read_csv('Travio2.csv')
+    df = pd.read_csv('travio3.csv')
 
     df['Place'].unique()
 
