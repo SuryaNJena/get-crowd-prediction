@@ -12,7 +12,7 @@ def predict():
     location_of_analysis = data['location']
     datetime_for_prediction = pd.to_datetime(data['date'], format='%Y-%m-%d %H:%M').floor('H')
     
-    df = pd.read_csv('travio_large.csv')
+    df = pd.read_csv('travio5.csv')
     
     df = df[df['Place'].str.contains(location_of_analysis)]
     df_exits = pd.read_csv('travio_exits.csv')
